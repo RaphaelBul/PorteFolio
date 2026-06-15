@@ -1,0 +1,112 @@
+#contact .contact-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.contact-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, rgba(93,240,232,0.1), rgba(184,127,255,0.1));
+  border: 1px solid rgba(93,240,232,0.2);
+  border-radius: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--cyan);
+  transition: all var(--transition);
+  margin-bottom: 32px;
+}
+
+.contact-email:hover {
+  background: rgba(93,240,232,0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(93,240,232,0.15);
+}
+
+.contact-email svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  transition: all var(--transition);
+}
+
+.contact-link:hover {
+  border-color: var(--cyan-dim);
+  color: var(--cyan);
+  background: rgba(93,240,232,0.05);
+}
+
+.contact-link svg { width: 15px; height: 15px; fill: currentColor; }
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.footer-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.footer-tag span { color: var(--cyan); }
